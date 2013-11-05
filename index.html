@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Just Google it! – How to become a better developer using search</title>
+
+		<meta name="description" content="Just Google it! – How to become a better developer using search">
+		<meta name="author" content="Carl Vuorinen">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- My custom styles -->
+		<link rel="stylesheet" href="css/my-custom-styles.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?v=4.0.0">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<header>
+			<div>
+				<ul>
+					<!-- <li>+CodeConnexx</li> -->
+					<li>+W3School</li>
+					<li>Gmail</li>
+					<li>Images</li>
+					<li><a class="grid-icon" href="#" onclick="Reveal.toggleOverview();"></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="resultspage-search">
+			<div class="small-logo"></div>
+			<div class="search-input">
+				<input type="text" class="search" name="q" id="resultspage-search-input" />
+			</div>
+			<div class="search-button">
+				<button onclick="googleSearch();"><span></span></button>
+			</div>
+			<div><a class="grid-icon" href="#" onclick="Reveal.toggleOverview();"></a></div>
+		</div>
+
+		<div class="resultspage-topnav">
+			<div>
+				<ul>
+					<li class="hilight">Web</li>
+					<li>Images</li>
+					<li>Maps</li>
+					<li>More</li>
+					<li id="search-tools">Search tools</li>
+				</ul>
+			</div>
+			<div class="options-button"><span class="gear-icon"></span></div>
+		</div>
+
+		<div class="infopage-border"></div>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-search-frontpage="How to become a better developer using search">
+                    <div class="frontpage-search">
+                    	<img id="google-logo" height="95" class="no-border" src="img/google-logo.png" alt="Google"><br>
+                        <input type="text" id="frontpage-search-input" class="search" name="q" value="How to become a better developer using search" /><br>
+                        <button><span>Google Search</span></button>
+                        <button><span>I'm Feeling Lucky</span></button>
+                    </div>
+                    <div class="fragment" data-input-frontpage-search="Carl Vuorinen"></div>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Carl Vuorinen">
+					<div class="resultspage-resultcount">About 184,000 results (0.24 seconds)</div>
+
+					<div class="resultspage-results">
+						<div class="resultspage-onebox">
+							<div class="onebox-images">
+								<img class="main-image" src="img/cvuorinen.png" />
+								<img class="secondary-image" src="img/Kalle4.jpg" />
+								<img class="secondary-image" src="img/w3-logo.png" />
+							</div>
+							<div class="onebox-name">Carl Vuorinen</div>
+							<div class="onebox-subtitle">Software Developer &amp; Team Lead</div>
+							<div class="onebox-description">Carl Vuorinen is a Finnish web developer employed by W3 Group Finland Oy, where he works as a team lead and web developer. He has worked on various projects ranging from e-commerce to web services and ... <span class="onebox-source"><a target="_blank" href="http://cvuorinen.net">Cvuorinen.net</a></span></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://cvuorinen.net/">Dev notes &amp; thoughts about PHP and web development: Cvuorinen <b>...</b></a></div>
+							<div class="result-url">cvuorinen.net/‎</div>
+							<div class="result-description">About. I am <b>Carl Vuorinen</b>, a Finnish web developer with about 10 years of experience in web development and PHP. Read more <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://cvuorinen.net/about/">About | Cvuorinen.net</a></div>
+							<div class="result-url">cvuorinen.net/about/‎</div>
+							<div class="result-description">I am <b>Carl Vuorinen</b> and this is my blog. I am a web developer with about 10 years of experience in web development and PHP is my language of choice.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://twitter.com/cvuorinen"><b>Carl Vuorinen</b> (cvuorinen) on Twitter</a></div>
+							<div class="result-url">https://twitter.com/cvuorinen‎</div>
+							<div class="result-description">The latest from <b>Carl Vuorinen</b> (@cvuorinen). PHP dev &amp; Team Lead at @W3_fi. Finland.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.linkedin.com/pub/carl-vuorinen/0/ba8/b88"><b>Carl Vuorinen</b> - Finland | LinkedIn</a></div>
+							<div class="result-url">fi.linkedin.com/pub/carl-vuorinen/0/ba8/b88‎</div>
+							<div class="result-description">View <b>Carl Vuorinen</b>'s (Finland) professional profile on LinkedIn. LinkedIn is the world's largest business network, helping professionals like <b>Carl Vuorinen</b> <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/cvuorinen">cvuorinen (<b>Carl Vuorinen</b>) · GitHub</a></div>
+							<div class="result-url">https://github.com/cvuorinen‎</div>
+							<div class="result-description">cvuorinen has 6 repositories written in PHP and JavaScript. Follow their code on GitHub.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://codeconnexx.com/schedule/">Schedule | CodeConnexx 2013</a></div>
+							<div class="result-url">codeconnexx.com/schedule/‎</div>
+							<div class="result-description">How to become a better developer using search — <b>Carl Vuorinen</b>. 12:30 – 13:30, Lunch. 13:30 – 14:20, Environments, line up! Vagrant and Puppet 101 — Jelrik <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.phpdeveloper.org/news/20070">PHPDeveloper.org: <b>Carl Vuorinen</b>: Installing SonarQube with ...</a></div>
+							<div class="result-url">www.phpdeveloper.org/news/20070‎</div>
+							<div class="result-description"><span class="result-date">Sep 4, 2013 - </span><b>Carl Vuorinen</b> has posted a tutorial about getting SonarQube to run on your codebase (with the help of Jenkins). SonarQube runs statics on <b>...</b></div>
+						</div>
+					</div>
+
+					<div class="fragment" data-input-search="define googling"></div>
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="define googling">
+					<div class="resultspage-resultcount">About 797,000 results (0.12 seconds)</div>
+
+					<div class="resultspage-results">
+						<div class="resultspage-onebox">
+							<div class="onebox-title">See results about</div>
+							<div class="onebox-description" style="margin-top:5px;">
+								<img src="img/g-icon.jpg" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
+								Google<br>
+								<span class="onebox-subtitle">Search company</span><br>
+								Google Inc. is an American multinational ...</div>
+						</div>
+
+						<div class="resultspage-defbox">
+							<div class="defbox-title">goo·gle</div>
+							<div class="defbox-subtitle">/ˈgo͞ogəl/</div>
+							<div class="defbox-description"><i>verb</i><br>
+								<span class="defbox-definition">gerund or present participle: <b>googling</b></span>
+								<ol>
+								<li>search for information about (someone or something) on the Internet using the search engine Google.<br>
+								<span class="defbox-definition">"I recently googled my 7th grade teacher and found his current e-mail address"</span></li>
+								</ol>
+							</div>
+							<div class="defbox-arrow"><div class="defbox-arrow-inner"></div></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.merriam-webster.com/dictionary/google">Google - Definition and More from the Free Merriam-Webster <b>...</b></a></div>
+							<div class="result-url">www.merriam-webster.com/dictionary/google‎</div>
+							<div class="result-description">Definition of google from the Merriam-Webster Online Dictionary with audio ... To the movies; to television (hours and hours); to Googling obsessively (hours and <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.urbandictionary.com/define.php?term=googling">Urban Dictionary: <b>googling</b></a></div>
+							<div class="result-url">www.urbandictionary.com/define.php?term=googling‎</div>
+							<div class="result-description"><b>Googling</b>. Searching. Coined by popular use of google.com. If you can't find any more information about hydrothermodynamics, I can do some googleing for you.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://en.wikipedia.org/wiki/Google_(verb)">Google (verb) - Wikipedia, the free encyclopedia</a></div>
+							<div class="result-url">en.wikipedia.org/wiki/Google_(verb)‎</div>
+							<div class="result-description">"Googled" redirects here. For the book of the same name, ... "Google - Definition and More from the Free Merriam-Webster Dictionary". Merriam-webster.com.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.thefreedictionary.com/Googling‎"><b>Googling</b> - definition of <b>Googling</b> by the Free Online Dictionary ...</a></div>
+							<div class="result-url">www.thefreedictionary.com/Googling‎</div>
+							<div class="result-description">A trademark used for an Internet search engine. This trademark often occurs in print as a verb, sometimes in lowercase: "A high school English teacher <b>...</b></div>
+						</div>
+
+					</div>
+
+					<div class="fragment" data-input-search="Google help"></div>
+
+					<aside class="notes">
+						Why talk about Googling?<br>
+						- Googling is a skill<br>
+						- It's part of your job<br>
+						- Nobody knows everything<br>
+						<br>
+						Disclaimer<br>
+						- Not advocating copy-paste coding<br>
+						- Effectively find information and apply it in practice to solve problems<br>
+						- Learn new things while doing it (always understand how things work)<br>
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Google help">
+					<div class="resultspage-resultcount">About 6,850,000,000 results (0.30 seconds)</div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/?hl=en"><b>Google Help</b></a></div>
+							<div class="result-url">https://support.google.com/?hl=en‎</div>
+							<div class="result-description">Google Play ... Google Maps Engine ... Post questions and get advice from other people using the same Google products as you. See a list of Google product <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/websearch/?hl=en#topic=3180167">Search Help</a></div>
+							<div class="result-description">Official Search Help Center where you can find tips and tutorials on <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/websearch/answer/136861?hl=en">Search operators</a></div>
+							<div class="result-description">If you're not finding what you're searching for after using our basic search tips, try <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links" style="clear:both;">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/websearch/answer/142143?hl=en">Search tools and filters</a></div>
+							<div class="result-description">You can filter and customize the search results you see by using the options  <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/websearch/answer/35890?hl=en">Google Advanced Search</a></div>
+							<div class="result-description">For certain complex searches, you might want more control over the results that <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.google.com/help/features.html">Search Features - Google</a></div>
+							<div class="result-url">www.google.com/help/features.html‎</div>
+							<div class="result-description">In addition to providing easy access to billions of web pages, Google has many special features to help you to find exactly what you're looking for. Some of our <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.google.com/intl/en/help/features_list.html">Google Help : Search Features</a></div>
+							<div class="result-url">www.google.com/intl/en/help/features_list.html‎</div>
+							<div class="result-description">In addition to providing easy access to billions of web pages, Google has many special features to help you to find exactly what you're looking for. Click the title <b>...</b></div>
+						</div>
+
+					</div>
+
+					<aside class="notes">
+						- How many has ever clicked?<br>
+						- "Why would I need help? I know how to write a search query!"<br>
+						- Find it from the gear icon and footer on front page <br>
+						- Search operators<br>
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Advanced Search</h2>
+					<br>
+					<img src="img/advanced-search.png" class="no-border no-resize">
+
+					<div class="fragment" data-paste-search="ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'FK_371009292576E0FD' of table 'foo'"></div>
+
+					<aside class="notes">
+						- How many have ever used? (within a year?)<br>
+						- A good place to try out the search operators and search tools<br>
+						- A good reminder of all the different (and new) search operators and tools<br>
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'FK_371009292576E0FD' of table 'foo'">
+					<br>
+					<div class="resultspage-result">
+						<p class="resultspage-noresults">Your search - <b>ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'FK_371009292576E0FD' of table 'foo'</b> - did not match any documents.
+						<br><br>
+						Suggestions:</p>
+					</div>
+					
+					<h2 class="fragment"><i>Never take Nothing <br>for an Answer</i></h2>
+					<br>
+					<p class="fragment">
+						<icon class="fa fa-reply fa-2x fa-rotate-180" style="color: #DD4B39; text-shadow: 2px 2px 3px #aaa;"></icon>
+						&nbsp; Generalize the query</p>
+
+					<aside class="notes">
+						- You're being too specific<br>
+						- What parts of an error message are specific to your application or environment?<br>
+						<br>
+						Example "nothing for an answer" and * wildcard operator (mysql-error)
+					</aside>
+				</section>
+
+
+				<section data-state="resultspage" class="resultspage" data-search="Wisdom of the Ancients">
+					<div class="resultspage-resultcount">About 635,000 results (0.25 seconds) </div>
+
+					<div class="resultspage-results">
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://xkcd.com/979/">xkcd: <b>Wisdom of the Ancients</b></a></div>
+							<div class="result-url">xkcd.com/979/</div>
+							<div class="result-description">sarcasm, math, and language. You can get the Subways comic as a poster! <b>Wisdom of the Ancients</b>. |&lt; · &lt; Prev · Random · Next > · >|. <b>Wisdom of the Ancients</b>.</div>
+							<br>
+							<img src="img/wisdom_of_the_ancients.png" class="no-resize" style="width: 600px;">
+						</div>
+					</div>
+
+					<aside class="notes">
+						- Have to accept, that sometimes we just don't find anything <br>
+						- How can we make sure it doesn't happen too often?
+					</aside>
+
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Think before you Type</h2>
+					<br>
+					<p class="fragment">Ask yourself some questions</p>
+					<br>
+					<p class="fragment quote"><i>How would <em>other people</em> having the same <br>issue <strong>ask for help</strong> on StackOverflow?</i></p>
+					<br>
+					<p class="fragment quote"><i>How would <em>someone else</em> describe this issue <br>when <strong>writing a blog post</strong> on the topic?</i></p>
+					
+					<aside class="notes">
+						- What related information would likely be provided (or asked for) in a forum topic discussing this issue? <br>
+						- The ability to understand other peoples problems, "to put yourself in someone elses shoes"<br>
+						- Example "think how to ask and modify query" (mysql-distinct)
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Refine the original Query</h2>
+					<br>
+					<p class="fragment"><i>Try different combinations</i></p>
+					<br>
+					<p class="fragment quote"><i>Thinking about the problem from <em>different perspectives</em> can help <strong>YOU</strong> solve the problem by yourself!</i></p>
+
+					<div class="fragment" data-input-search="rubber ducking"></div>
+
+					<aside class="notes">
+						- Add keywords that better describe the situation, the outcome, the need <br>
+						- Take out meaningless keywords <br>
+						- Never give up after only one search!
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="rubber ducking">
+					<div class="resultspage-resultcount">About 624,000 results (0.21 seconds) </div>
+
+					<div class="resultspage-results">
+						<div class="resultspage-onebox">
+							<div class="onebox-images">
+								<img src="img/duck_assisting_with_debugging.jpg" />
+							</div>
+							<div class="onebox-name">Rubber ducking</div>
+							<div class="onebox-description">Rubber duck debugging, rubber ducking, and the rubber duckie test are informal terms used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck ... <span class="onebox-source"><a target="_blank" href="http://en.wikipedia.org/wiki/Rubber_duck_debugging">Wikipedia</a></span></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://en.wikipedia.org/wiki/Rubber_duck_debugging"><b>Rubber duck</b> debugging - Wikipedia, the free encyclopedia</a></div>
+							<div class="result-url">en.wikipedia.org/wiki/Rubber_duck_debugging‎</div>
+							<div class="result-description"><b>Rubber duck</b> debugging, rubber ducking, and the <b>rubber duckie</b> test are informal terms used in software engineering to refer to a method of debugging code.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://c2.com/cgi/wiki?RubberDucking"><b>Rubber Ducking</b></a></div>
+							<div class="result-url">c2.com/cgi/wiki?RubberDucking‎</div>
+							<div class="result-description"><span class="result-date">Nov 28, 2012 - </span>Place a <b>rubber duck</b> on your monitor and describe your problems to it. There's something magical about stating your problems aloud that <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.codinghorror.com/blog/2012/03/rubber-duck-problem-solving.html">Coding Horror: Rubber Duck Problem Solving</a></div>
+							<img class="result-author-image" src="img/coding-horror.jpg" />
+							<div class="result-url">www.codinghorror.com/.../rubber-duck-problem-solving.html‎</div>
+							<div class="result-author">by Jeff Atwood</div>
+							<div class="result-description"><span class="result-date">Mar 13, 2012 - </span>But for good reason: we're not-so-subtly trying to help you help yourself, by teaching you <b>Rubber Duck</b> problem solving. And boy does it ever <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.rubberduckdebugging.com"><b>Rubber Duck</b> Debugging</a></div>
+							<div class="result-url">www.rubberduckdebugging.com/‎</div>
+							<div class="result-description">Learn how to debug anything with a friendly <b>rubber duck</b>!</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://www.google.com/search?q=rubber+ducking&amp;tbm=isch">Images for <b>rubber ducking</b></a></div>
+							<img class="result-images" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQMdJDzgx2XAKAERmc9jVBZFqqGWqg9Q9Se3RKUqt1ZuPdeJhr" />
+							<img class="result-images" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3CZLeZH13L0GLmSWjITDgX974SNW-F6yRFLxVoRRfAFwhpp4r" />
+							<img class="result-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtSNyrefNdMuDTwvzRJ3ECHQdPYSM2NDNNE7dde01qBYTl4gnC" />
+							<img class="result-images" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD_EvkMUca_WqM6dSNp1bRuqDQQuhQRIlr4N1rpcePKrqZLqYW" />
+							<img class="result-images" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF7CBXABxTG9LrJiuy8QQtByljTNbzDWJB3Cmun6H9vC-E5sgQdA" />
+						</div>
+
+					</div>
+
+					<div class="fragment" data-input-search="How to ask on stackoverflow"></div>
+
+					<aside class="notes">
+						- Pragmatic Programmer story <br>
+						- Think about how you would explain your issue to someone else <br>
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="How to ask on stackoverflow">
+					<div class="resultspage-resultcount">About 18,200,000 results (0.30 seconds) </div>
+
+					<div class="resultspage-results">
+						<div class="resultspage-onebox">
+							<div class="onebox-title">See results about</div>
+							<div class="onebox-description" style="margin-top:5px;">
+								<img src="img/so-icon.png" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
+								Stack Overflow<br>
+								<span class="onebox-subtitle">Q&amp;A site</span><br>
+								Stack Overflow is a question and answer site for professional ...</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://stackoverflow.com/questions/how-to-ask"><b>How to Ask - Stack Overflow</b></a></div>
+							<div class="result-url">http://stackoverflow.com/questions/how-to-ask</div>
+							<div class="result-description">Welcome to <b>Stack Overflow</b>! We'd love to help you, but the reality is that not every question gets answered. To improve your chances, here are some tips: <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links">
+							<div class="result-title"><a target="_blank" href="http://meta.stackoverflow.com/questions/18584/how-to-ask-a-smart-question">How to ask a smart question</a></div>
+							<div class="result-description">In the specific example that you used, the system worked exactly <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result-links">
+							<div class="result-title"><a target="_blank" href="http://meta.stackoverflow.com/questions/80538/how-to-ask-questions-on-stack-overflow">How to ask questions on Stack ...</a></div>
+							<div class="result-description">I sympathise ESR's guide but it's IMO too long for this pupose <b>...</b></div>
+						</div>
+
+						<div class="resultspage-more-results-link">
+							<a href="https://www.google.com/search?q=+site:stackoverflow.com+how+to+ask+on+stackoverflow">More results from stackoverflow.com »</a>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://blog.stackoverflow.com/2010/10/asking-better-questions/">Asking Better Questions - Blog - <b>Stack Overflow</b></a></div>
+							<div class="result-url">blog.stackoverflow.com/2010/10/asking-better-questions/</div>
+							<div class="result-description"><span class="result-date">Oct 4, 2010 - </span>Every new Stack Overflow user with &lt;= 10 reputation is now presented with a mandatory “How To Ask” page that they must click through before <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://stackoverflow.com/help/how-to-ask">How do I ask a good question? - Help Center - <b>Stack Overflow</b></a></div>
+							<div class="result-url">stackoverflow.com/help/how-to-ask</div>
+							<div class="result-description">Have you thoroughly searched for an answer before asking your question? Sharing your research helps everyone. Tell us what you found and why it didn't meet <b>...</b></div>
+						</div>
+
+					</div>
+
+					<aside class="notes">
+						- Research the issue<br>
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Understanding the Problem</h2>
+					<br>
+					<p class="fragment"><i>What <em>details</em> contribute to the problem <br>and in what <em>context</em> does it present itself?</i></p>
+					<br>
+					<p class="fragment"><i>What is the <strong>root cause</strong> of the problem you are facing?</i></p>
+
+					<aside class="notes">
+						- Think about details and context
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2 style="white-space:nowrap;">The Fear of the Click and the Tab</h2>
+					<br>
+					<img class="fragment" src="img/query-timeline.png" />
+
+					<div class="fragment" data-input-search="too many tabs"></div>
+
+					<aside class="notes">
+						- 60% of clicks go to the top 3 results, 75% of users never go to page 2 <br>
+						- Don't hesitate to click links, Don't be afraid to open tabs <br>
+						- Have patience when googling <br>
+						- Thinks of it as a part of your job (Not just the necessary evil that you want to get over with asap) <br>
+						- Have a different mindset when googling important stuff <br>
+						- The more results you open, more likely it is you find relevant content <br>
+						- Open results in new tabs (There is an option to make this default)
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage" data-search="too many tabs">
+					<h2>Escaping the Tab Hell</h2>
+					<br>
+					<div class="fragment" style="position:relative;">
+						<img src="img/too-many-tabs.png" />
+						<icon class="fa fa-ban fragment" style="color: #DD4B39; text-shadow: 2px 2px 3px #aaa; position: absolute; top: -45px; left: 100px; font-size:500px;"></icon>
+					</div>
+
+					<div class="fragment" data-input-search="tree style tabs"></div>
+
+					<aside class="notes">
+						- Manage tabs<br>
+						- Open new windows for search (or drag tab to create new window)<br>
+						- Firefox tab groups<br>
+						- Trees tyle tabs &amp; tab mix plus<br>
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage" data-search="tree style tabs">
+					<h2>Escaping the Tab Hell</h2>
+					<br>
+					<div>
+						<img src="img/tree-style-tabs.png" />
+					</div>
+
+					<div class="fragment" data-input-search="PHP libraries"></div>
+
+					<aside class="notes">
+						- Example (lightbox)<br>
+						- Also "apply and learn + wayback machine"
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="PHP libraries">
+					<div class="resultspage-resultcount">About 85,500,000 results (0.27 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://en.wikipedia.org/wiki/List_of_PHP_libraries">List of <b>PHP libraries</b> - Wikipedia, the free encyclopedia</a></div>
+							<div class="result-url">en.wikipedia.org/wiki/List_of_PHP_libraries</div>
+							<div class="result-description"><b>...</b> Wikipedia, the free encyclopedia. Jump to: navigation, search. This is the present list of all officially documented <b>libraries</b> for the <b>PHP</b> programming language.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://tutorialzine.com/2013/02/24-cool-php-libraries-you-should-know-about/">24 Cool <b>PHP Libraries</b> You Should Know About | Tutorialzine</a></div>
+							<div class="result-url">tutorialzine.com/2013/02/24-cool-php-libraries-you-should-know-about/</div>
+							<div class="result-description"><span class="result-date">Feb 13, 2013 -</span>It is an exciting time to be a PHP developer. There are lots of useful libraries released every day, and with the help of Composer and Github, <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://gist.github.com/ziadoz/1677679">Awesome <b>PHP Libraries</b> and Resources - Gists - GitHub</a></div>
+							<div class="result-url">https://gist.github.com/ziadoz/1677679</div>
+							<div class="result-description">Awesome <b>PHP Libraries</b> and Resources - Gist is a simple way to share snippets of text and code with others.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://docs.mongodb.org/ecosystem/drivers/php-libraries/"><b>PHP Libraries</b>, Frameworks and Tools - MongoDB</a></div>
+							<div class="result-url">docs.mongodb.org/ecosystem/drivers/php-libraries/</div>
+							<div class="result-description">MongoDB Drivers and Client Libraries >; <b>PHP Libraries</b>, Frameworks and Tools ... The PHP community has created a huge number of libraries to make working <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://pear.php.net/">PEAR - <b>PHP</b> Extension and Application Repository</a></div>
+							<div class="result-url">pear.php.net/</div>
+							<div class="result-description">A framework and distribution system for reusable PHP components. [Open source]</div>
+						</div>
+
+					</div>
+
+					<aside class="notes">
+						- Finding relevent libraries
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Google <strong>site:</strong> Search</h2>
+					<br>
+					<p class="fragment quote"><i>Google is better at search than <em>any other site</em></i>.</p>
+					<br>
+					<div class="fragment" style="margin-left:50px;">
+						<p>Including:</p>
+						<ul class="logo-list">
+							<li><img src="img/so-icon.png" />
+								Stack Overflow</li>
+							<li><img src="img/Octocat.png" />
+								GitHub</li>
+							<li><img src="img/packagist-logo.png" />
+								Packagist</li>
+						</ul>
+					</div>
+
+					<div class="fragment" data-input-search="site:github.com php"></div>
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="site:github.com php">
+					<div class="resultspage-resultcount">About 5,480,000 results (0.21 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/facebook/php-webdriver">facebook/<b>php</b>-webdriver · GitHub</a></div>
+							<div class="result-url">https://github.com/facebook/php-webdriverNot_invented_here</div>
+							<div class="result-description"><span class="result-date">Oct 14, 2013 -</span> thin <b>php</b> client for webdriver. Contribute to php-webdriver development by creating an account on GitHub.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/facebook/facebook-php-sdk">facebook/facebook-<b>php</b>-sdk · GitHub</a></div>
+							<div class="result-url">https://github.com/facebook/facebook-php-sdk</div>
+							<div class="result-description">Facebook <b>PHP</b> SDK. Contribute to facebook-php-sdk development by creating an account on GitHub.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/languages/PHP">Trending <b>PHP</b> repositories on GitHub today · GitHub</a></div>
+							<div class="result-url">https://github.com/languages/PHP</div>
+							<div class="result-description">tommcfarlin/WordPress-Plugin-Boilerplate <b>PHP</b>. A foundation for WordPress Plugin Development that aims to provide a clear and consistent guide for building <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/facebook/hhvm/wiki">Home · facebook/hhvm Wiki · GitHub</a></div>
+							<div class="result-url">https://github.com/facebook/hhvm/wiki</div>
+							<div class="result-description"><span class="result-date">Oct 20, 2013 -</span> HHVM is a new open-source virtual machine designed for executing programs written in <b>PHP</b>. HHVM uses a just-in-time compilation approach <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/php"><b>php</b> (<b>php</b>.net) · GitHub</a></div>
+							<div class="result-url">https://github.com/php</div>
+							<div class="result-description"><b>php</b>.net <b>php</b>. git.<b>php</b>.net; http://www.<b>php</b>.net; Joined on Sep 18, 2008. 58 public repos 6 members · Repositories · Members. Mirrors; Forks; Sources; All. C; 3,500 <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/php/php-src"><b>php/php</b>-src · GitHub</a></div>
+							<div class="result-url">https://github.com/php/php-src</div>
+							<div class="result-description">The <b>PHP</b> Interpreter. http://www.<b>php</b>.net · 10,000+ commits · 95 branches · 560 releases · 148 contributors · C 62.7% · <b>PHP</b> 35.7%; Other 1.5%. C <b>PHP</b> Other.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://github.com/fabpot/PHP-CS-Fixer">fabpot/<b>PHP</b>-CS-Fixer · GitHub</a></div>
+							<div class="result-url">https://github.com/fabpot/PHP-CS-Fixer</div>
+							<div class="result-description"><b>PHP</b>-CS-Fixer - Analyzes some <b>PHP</b> source code and tries to fix coding standards issues (PSR-1 and PSR-2 compatible)</div>
+						</div>
+
+					</div>
+
+					<div class="fragment" data-input-search="Not Invented Here"></div>
+
+					<aside class="notes">
+						- Example (language-detect)<br>
+						- Bookmarklet (at github)<br>
+						- Example (getter-setter)<br>
+						- Example (twitter-packagist)<br>
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Not Invented Here">
+					<div class="resultspage-resultcount">About 105,000,000 results (0.29 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://en.wikipedia.org/wiki/Not_invented_here"><b>Not invented here</b> - Wikipedia, the free encyclopedia</a></div>
+							<div class="result-url">en.wikipedia.org/wiki/Not_invented_here</div>
+							<div class="result-description"><b>Not invented here (NIH)</b> is the philosophy of social, corporate, or institutional cultures that avoid using or buying already existing products, research, standards, <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://twitter.com/nihcomic">Not Invented Here (nihcomic) on Twitter</a></div>
+							<div class="result-url">https://twitter.com/nihcomic</div>
+							<div class="result-description">The latest from <b>Not Invented Here</b> (@nihcomic). A comic strip about software and the people who make it, by Bill Barnes &amp; Jeff Zugale. Seattle, WA &amp; Los <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.webopedia.com/TERM/N/not_invented_here_syndrome.html">What is <b>not invented here</b> syndrome? - A Word Definition From the ...</a></div>
+							<div class="result-url">www.webopedia.com/TERM/N/not_invented_here_syndrome.html</div>
+							<div class="result-description">This page describes the term <b>not invented here</b> syndrome and lists other pages on the Web where you can find additional information.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Not_Invented_Here.html"><b>Not Invented Here</b> - Princeton University</a></div>
+							<div class="result-url">www.princeton.edu/~achaney/tmve/wiki100k/.../Not_Invented_Here.htm...</div>
+							<div class="result-description"><b>Not Invented Here</b> (NIH) is a term used to describe persistent social, corporate or institutional culture that avoids using or buying already existing products, <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.techopedia.com/definition/3848/not-invented-here-syndrome-nihs"><b>Not Invented Here</b> Syndrome (NIHS) - Definition from Techopedia</a></div>
+							<div class="result-url">www.techopedia.com/definition/3848/not-invented-here-syndrome-nihs</div>
+							<div class="result-description"><b>Not Invented Here</b> Syndrome NIHS Definition - <b>Not invented here</b> syndrome (NIHS) is a mindset or corporate culture that favors internally-developed products <b>...</b></div>
+						</div>
+
+					</div>
+
+					<div class="fragment" data-input-search="Impostor Syndrome"></div>
+
+					<aside class="notes">
+						- Protectionism/perfectionism (in-house is better, more secure)<br>
+						- Totally ok for learning purposes<br>
+						- Even if you end up doing it yourself, it's good to see how others have solved similar problems and learn from them
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Impostor Syndrome">
+					<div class="resultspage-resultcount">About 105,000,000 results (0.29 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://en.wikipedia.org/wiki/Impostor_syndrome"><b>Impostor syndrome</b> - Wikipedia, the free encyclopedia</a></div>
+							<div class="result-url">en.wikipedia.org/wiki/Impostor_syndrome</div>
+							<div class="result-description">The <b>impostor syndrome</b>, sometimes called impostor phenomenon or fraud syndrome, is a psychological phenomenon in which people are unable to internalize <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://geekfeminism.wikia.com/wiki/Impostor_syndrome"><b>Impostor syndrome</b> - Geek Feminism Wiki</a></div>
+							<div class="result-url">geekfeminism.wikia.com/wiki/Impostor_syndrome</div>
+							<div class="result-description"><b>Impostor syndrome</b> describes a situation where someone feels like an imposter or fraud because...</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.huffingtonpost.com/tag/impostor-syndrome"><b>Impostor Syndrome</b> - Huffington Post</a></div>
+							<div class="result-url">www.huffingtonpost.com/tag/impostor-syndrome</div>
+							<div class="result-description">Accept that everyone everywhere -- no matter how successful -- experiences the self-doubt that underlies <b>imposter syndrome</b>. It is part and parcel of becoming <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.byrdseed.com/the-curious-case-of-impostor-syndrome/"><b>Impostor Syndrome</b> and Gifted Students - Byrdseed</a></div>
+							<div class="result-url">www.byrdseed.com/the-curious-case-of-impostor-syndrome/</div>
+							<div class="result-description">Why do highly capable people feel like they aren't as great as others think? This is known as <b>Impostor's Syndrome</b> and is rather common among high achievers.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.psmag.com/business-economics/qualified-job-wait-probably-imposter-syndrome-psychology-68700/">Not Qualified for Your Job? Wait, You Probably Are - Pacific Standard</a></div>
+							<div class="result-url">www.psmag.com/.../qualified-job-wait-probably-imposter-syndrome-psy...</div>
+							<div class="result-description"><span class="result-date">Oct 22, 2013 -</span> That thing where you're a relatively high-level professional who can't help but think you don't deserve to be where you are? It's called <b>impostor</b> <b>...</b></div>
+						</div>
+
+					</div>
+
+					<aside class="notes">
+						- Feeling you are not good enough, and you are a fraud by only using other peoples code<br>
+						- "Have to prove you are a good programmer, so do everything yourself"<br>
+						- "The more you know, the more you know you don't know"
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+                    <h2>Avoiding Impostor Syndrome</h2>
+                    <br>
+                    <p class="fragment quote"><i>Always try to <em>understand</em> and <em>learn</em> from other peoples code you are using.</i></p>
+                    <ul class="icon-list">
+                    	<li class="fragment"><icon class="fa fa-book"></icon> Read</li>
+                    	<li class="fragment"><icon class="fa fa-lightbulb-o"></icon> Think</li>
+                    	<li class="fragment"><icon class="fa fa-comments-o"></icon> Discuss</li>
+                    	<li class="fragment"><icon class="fa fa-code-fork"></icon> Contribute</li>
+                    </ul>
+
+                    <div class="fragment" data-input-search="Contributing to Open Source"></div>
+
+                    <aside class="notes">
+						- You are saving time by using someone elses code, you have a few minutes to invest in some learning<br>
+						- Look under the hood, beyond what docs and examples show (not all at once), IDE ctrl-click<br>
+						- Try to think of ways to improve it (even if you don't actually modify it)<br>
+						- Try to identify any design patterns used<br>
+						- If you run into any issues, contribute
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Contributing to Open Source">
+					<div class="resultspage-resultcount">About 36,500,000 results (0.18 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://stackoverflow.com/questions/13878207/finding-an-open-source-project-to-contribute-to">Finding an open source project to contribute to - Stack Overflow</a></div>
+							<div class="result-url">stackoverflow.com/.../finding-an-open-source-project-to-contribute-to</div>
+							<div class="result-description"><span class="result-date">Dec 14, 2012 -</span> The sheer number of projects out there is quite intimidating. I looked ... More than anything, I'd start by building something (a website, an <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://opensource.com/life/13/4/ten-ways-participate-open-source">10 Ways to Start Contributing to Open Source - OpenSource.com</a></div>
+							<div class="result-url">opensource.com/life/13/4/ten-ways-participate-open-source</div>
+							<div class="result-description"><span class="result-date">Apr 1, 2013 -</span> A guide to 10 ways to start participating in and contributing to open source projects and communities.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.wikihow.com/Contribute-to-Open-Source">How to Contribute to Open Source: 10 Steps (with Pictures)</a></div>
+							<div class="result-url">www.wikihow.com › ... › Software › Programming</div>
+							<div class="result-description">How to <b>Contribute to Open Source</b>. Open source means that the source code of the software is available for free to everyone and you can modify the code and <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://contribute.jquery.org/open-source/">Getting Started <b>Contributing to Open Source</b> | Contribute to jQuery</a></div>
+							<div class="result-url">contribute.jquery.org/open-source/</div>
+							<div class="result-description">Often, folks have an idea of what they want to contribute to an open source project before they even think about how they would do it. But even if you have no <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://thechangelog.com/you-yes-you-should-contribute-to-open-source/">You (yes, you!) should contribute to open source - The Changelog</a></div>
+							<div class="result-url">thechangelog.com/you-yes-you-should-contribute-to-open-source/</div>
+							<div class="result-description"><span class="result-date">May 10, 2011 -</span> If you read this blog, you obviously care about open source. If you've never contributed to an open source project, though, you might have some <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://symfony.com/doc/current/contributing/index.html">Contributing (current) - Symfony</a></div>
+							<div class="result-url">symfony.com › Documentation</div>
+							<div class="result-description">This part of the documentation tells you everything you want to know about how you can be involved with the Symfony project; from <b>contributing</b> documentation <b>...</b></div>
+						</div>
+
+					</div>
+
+					<div class="fragment" data-input-search="Learning new things"></div>
+
+					<aside class="notes">
+						- Contribute back to the open source code/libraries/frameworks you are using<br>
+						- Bug fixes, bug reports, documentation etc.
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Learning new things">
+					<div class="resultspage-resultcount">About 447,000,000 results (0.34 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://lifehacker.com/the-science-behind-how-we-learn-new-skills-908488422">The Science Behind How We Learn New Skills - Lifehacker</a></div>
+							<div class="result-url">lifehacker.com/the-science-behind-how-we-learn-new-skills-908488422</div>
+							<div class="result-description"><span class="result-date">Jul 25, 2013 -</span> We'll likely be learning about how our brain works for years to come, but we are starting to get a better idea of how we <b>learn new things</b>. To that <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.wikihow.com/Learn-New-Things">How to <b>Learn New Things</b>: 6 Steps (with Pictures) - wikiHow</a></div>
+							<div class="result-url">www.wikihow.com › ... › Creativity &amp; Intelligence › Learning Styles</div>
+							<div class="result-description">How to <b>Learn New Things</b>. Edited by Rajdeep2302, Teresa, Breezedill, Wiki2013 and 1 other. Ever wondered after watching your favorite show, your friends or <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://www.google.com/search?q=learning+new+things&amp;tbm=isch">Images for <b>learning new things</b></a></div>
+							<img class="result-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Dkeo_zySAsb5tHihUXGNiyY-5t20xOZrBapYPtHKW7AiIs4j8Q" />
+							<img class="result-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGG1Pvnh_dmr7LEz6axfSRcVwtZLE8PdHGO7tbKk_Zcjo_cYdKw" />
+							<img class="result-images" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQovLlEiWieb2_VhnQzedEvsUeWhTmpimtA4LJVYVisSfguCowzVg" />
+							<img class="result-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObV1m3ng1JzKWXROsmbuk6YhC6wc65dPUn82jl9h8NzQ7vze04w" />
+							<img class="result-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFEhBxPhgXAK5NvuJljXFf_09P13zzEGs2DWTWp8nMfQKOzmiI1X6Jw" />
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://psychology.about.com/od/educationalpsychology/">Effective Learning - Tips for Effective Learning</a></div>
+							<div class="result-url">psychology.about.com › ... › Educational Psychology</div>
+							<div class="result-description">As a graduate student who is also a full-time science writer, the amount of time I have to spend <b>learning new things</b> is limited. It's important to get the most <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://www.marcandangel.com/2010/05/24/top-40-useful-sites-to-learn-new-skills/">Top 40 Useful Sites To Learn New Skills - Marc and Angel Hack Life</a></div>
+							<div class="result-url">www.marcandangel.com/2010/05/.../top-40-useful-sites-to-learn-new-ski...</div>
+							<div class="result-description"><span class="result-date">May 24, 2010 -</span> The web is a powerful resource that can easily help you learn new skills. ... 50 Things Everyone Should Know How To Do - While not totally <b>...</b></div>
+						</div>
+
+					</div>
+
+					<aside class="notes">
+						- Learning is your most valuable skill<br>
+						- Search for video tutorials <br>
+						- Example search video tutorials: angular|php|python|symfony|design patterns video tutorial <br>
+						- Google search is better than youtube search
+					</aside>
+				</section>
+
+				<!--
+				<section data-state="infopage" class="infopage">
+					<h2>Search for video tutorials</h2>
+					<br>
+					
+					<div class="resultspage">
+						<div class="resultspage-results">
+							<div class="resultspage-result">
+								<div class="result-title"><a target="_blank" href="http://www.youtube.com/watch?v=3yrpRfdtYc4">PHP OOP Login/Register System: CSRF Protection (Part 12/23)</a></div>
+								<img class="result-author-image" src="img/video-php-oop.jpg" />
+								<div class="result-url">www.youtube.com/watch?v=3yrpRfdtYc4</div>
+								<div class="result-author">Uploaded by phpacademy</div>
+								<div class="result-description">Here we implement a token generation system to protect against Cross Site Request Forgery (CSRF). Official <b>...</b></div>
+							</div>
+						</div>
+					</div>
+
+					<aside class="notes">
+						- Example (angular-testing)
+					</aside>
+					
+				</section>
+				-->
+
+				<section data-state="infopage" class="infopage">
+					<h2>Finding similar articles</h2>
+					<br>
+					<p>Google <strong>related:</strong> Search</p>
+					<br>
+
+					<aside class="notes">
+						- Example (angular-testing)
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Adjusting Reading Level" data-search-tools="active">
+					<div class="fragment" style="position: absolute; top: 0; left: 0;">
+						<img src="img/reading-level1.png" class="no-border no-resize">
+					</div>
+					<div class="fragment" style="position: absolute; top: 2px; left: 5px;">
+						<img src="img/reading-level2.png" class="no-border no-resize">
+					</div>
+
+					<div class="fragment" data-input-search="Google Web History"></div>
+
+					<aside class="notes">
+						- Adjust reading level according to your skill level on the topic <br>
+						- Example (php-design-patterns) <br>
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Google Web History">
+					<div class="resultspage-resultcount">About 1,330,000,000 results (0.26 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://www.google.com/history/"><b>Web History - Google</b></a></div>
+							<div class="result-url">https://www.google.com/history/</div>
+							<div class="result-description">One account. All of Google. Sign in with your Google Account. Email Password ... One Google Account for everything Google. Google; Privacy &amp; Terms · Help.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/accounts/answer/54068?hl=en">Basics: <b>Google Web History</b> - Accounts Help - Google Help</a></div>
+							<div class="result-url">https://support.google.com/accounts/answer/54068?hl=en</div>
+							<div class="result-description">When you create a Google Account, <b>Google Web History</b> is automatically turned on.</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://support.google.com/accounts/answer/54067?hl=en">Remove all <b>Google Web History</b> - Accounts Help - Google Help</a></div>
+							<div class="result-url">https://support.google.com/accounts/answer/54067?hl=en</div>
+							<div class="result-description">You can permanently erase all items from your <b>Google Web History</b> at any time. Keep in mind that your search history helps you find what you're looking for <b>...</b></div>
+						</div>
+
+						<br>
+						<p class="fragment quote"><i>I know I read an article about that just the other day. What was the search query again that I used to find it?</i></p>
+					</div>
+
+					<aside class="notes">
+						- When learning new things you often need to go back to articles you read previously <br>
+					</aside>
+				</section>
+
+				<section data-state="infopage" class="infopage">
+					<h2>Use the History</h2>
+					<br>
+					<img src="img/search-history.png" class="no-border no-resize">
+
+					<div class="fragment" data-input-search="Let Me Google That For You"></div>
+
+					<aside class="notes">
+						- See the queries you made and the result pages you opened <br>
+						- Search the history, by query and opened pages (title, url, description)
+					</aside>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search="Let Me Google That For You">
+					<div class="resultspage-resultcount">About 1,600,000,000 results (0.25 seconds) </div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://lmgtfy.com/"><b>Let me google that for you</b></a></div>
+							<div class="result-url">lmgtfy.com/</div>
+							<div class="result-description">For all those people who find it more convenient to bother <b>you</b> <br> with their question rather than <b>google</b> it for themselves.</div>
+						</div>
+						<br>
+						<img src="img/lmgtfy.png" class="no-border" style="position: absolute; top: -10px; right: 100px;">
+						<br>
+						<p class="fragment quote"><i>Give a man an answer, help him once. <br> Teach a man to find the answer himself, <br> help him for a lifetime.</i></p>
+					</div>
+
+					<aside class="notes">
+						- For when you want to send a friendly reminder to someone <br>
+						- Use caution; make sure the person will take this in the spirit it was intended, as a friendly nudge. So use smiley-faces in your message, and make it clear that you are doing it with humor.
+					</aside>
+
+				</section>
+
+				<section>
+                    <div class="frontpage-search">
+                    	<img id="google-logo" height="95" class="no-border" src="img/google-logo.png" alt="Google"><br>
+                        <input type="text" id="frontpage-search-input" class="search" name="q" value="Thanks!" /><br>
+                        <button><span>Google Search</span></button>
+                        <button><span>I'm Feeling Lucky</span></button>
+                    </div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<footer>
+			<div class="left">Just Google it! – How to become a better developer using search — Carl Vuorinen</div>
+			<!-- <div class="right">CodeConnexx 2013</div> -->
+			<div class="right">W3 School 4.11.2013</div>
+		</footer>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<!-- jQuery & my custom js -->
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/my-custom-scripts.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: 'simple', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				minScale: 1.0, // no down scaling
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					//{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					//{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

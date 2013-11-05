@@ -1,0 +1,21 @@
+--- /home/kalle/projects/just-google-it/examples/10925-lightbox.js
++++ /home/kalle/projects/just-google-it/examples/12486-lightbox.js
+@@ -334,6 +334,18 @@
+ 		// once image is preloaded, resize image container
+ 		imgPreloader.onload=function(){
+ 			$(Lightbox.getID('lightboxImage')).src = imgPreloader.src;
++
++			// Set max width and height according to browser window size
++			if (imgPreloader.width > window.innerWidth * 0.9) {
++				imgPreloader.height = (window.innerWidth * 0.9 * imgPreloader.height) / imgPreloader.width;
++				imgPreloader.width = window.innerWidth * 0.9;
++			}
++
++			if (imgPreloader.height > window.innerHeight * 0.8) {
++				imgPreloader.width = (window.innerHeight * 0.8 * imgPreloader.width) / imgPreloader.height;
++				imgPreloader.height = window.innerHeight * 0.8;
++			}
++
+ 			Lightbox.resizeImageContainer(imgPreloader.width,imgPreloader.height);
+ 		}
+ 		imgPreloader.src = this.imageArray[this.activeImage].link;
