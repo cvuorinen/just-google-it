@@ -25,6 +25,8 @@
 
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css?v=4.0.0">
 
+		<link rel="stylesheet" href="redacted-font/stylesheet.css">
+
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -40,8 +42,7 @@
 		<header>
 			<div>
 				<ul>
-					<!-- <li>+CodeConnexx</li> -->
-					<li>+W3School</li>
+					<li>+CodeConnexx</li>
 					<li>Gmail</li>
 					<li>Images</li>
 					<li><a class="grid-icon" href="#" onclick="Reveal.toggleOverview();"></a></li>
@@ -80,9 +81,9 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-search-frontpage="How to become a better developer using search">
+				<section data-state="frontpagesearch" data-search-frontpage="How to become a better developer using search">
                     <div class="frontpage-search">
-                    	<img id="google-logo" height="95" class="no-border" src="img/google-logo.png" alt="Google"><br>
+                    	<img id="google-logo" height="95" class="no-border" src="images/google-logo.png" alt="Google"><br>
                         <input type="text" id="frontpage-search-input" class="search" name="q" value="How to become a better developer using search" /><br>
                         <button><span>Google Search</span></button>
                         <button><span>I'm Feeling Lucky</span></button>
@@ -96,9 +97,9 @@
 					<div class="resultspage-results">
 						<div class="resultspage-onebox">
 							<div class="onebox-images">
-								<img class="main-image" src="img/cvuorinen.png" />
-								<img class="secondary-image" src="img/Kalle4.jpg" />
-								<img class="secondary-image" src="img/w3-logo.png" />
+								<img class="main-image" src="images/cvuorinen.png" />
+								<img class="secondary-image" src="images/Kalle4.jpg" />
+								<img class="secondary-image" src="images/w3-logo.png" />
 							</div>
 							<div class="onebox-name">Carl Vuorinen</div>
 							<div class="onebox-subtitle">Software Developer &amp; Team Lead</div>
@@ -162,7 +163,7 @@
 						<div class="resultspage-onebox">
 							<div class="onebox-title">See results about</div>
 							<div class="onebox-description" style="margin-top:5px;">
-								<img src="img/g-icon.jpg" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
+								<img src="images/g-icon.jpg" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
 								Google<br>
 								<span class="onebox-subtitle">Search company</span><br>
 								Google Inc. is an American multinational ...</div>
@@ -210,15 +211,13 @@
 					<div class="fragment" data-input-search="Google help"></div>
 
 					<aside class="notes">
+						How many of you use Google? (anything else?)<br>
 						Why talk about Googling?<br>
-						- Googling is a skill<br>
-						- It's part of your job<br>
-						- Nobody knows everything<br>
+						- Googling is a skill,  It's part of your job,  Nobody knows everything<br>
 						<br>
 						Disclaimer<br>
 						- Not advocating copy-paste coding<br>
-						- Effectively find information and apply it in practice to solve problems<br>
-						- Learn new things while doing it (always understand how things work)<br>
+						- Effectively find information and apply it in practice to solve problems,  Learn new things while doing it <br>
 					</aside>
 				</section>
 
@@ -278,7 +277,7 @@
 				<section data-state="infopage" class="infopage">
 					<h2>Advanced Search</h2>
 					<br>
-					<img src="img/advanced-search.png" class="no-border no-resize">
+					<img src="images/advanced-search.png" class="no-border no-resize">
 
 					<div class="fragment" data-paste-search="ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'FK_371009292576E0FD' of table 'foo'"></div>
 
@@ -311,6 +310,14 @@
 					</aside>
 				</section>
 
+				<section data-background="images/examples/mysql-error/screenshot2.png">
+				</section>
+
+				<section data-background="images/examples/mysql-error/screenshot3.png">
+				</section>
+
+				<section data-background="images/examples/mysql-error/screenshot5.png">
+				</section>
 
 				<section data-state="resultspage" class="resultspage" data-search="Wisdom of the Ancients">
 					<div class="resultspage-resultcount">About 635,000 results (0.25 seconds) </div>
@@ -321,15 +328,39 @@
 							<div class="result-url">xkcd.com/979/</div>
 							<div class="result-description">sarcasm, math, and language. You can get the Subways comic as a poster! <b>Wisdom of the Ancients</b>. |&lt; · &lt; Prev · Random · Next > · >|. <b>Wisdom of the Ancients</b>.</div>
 							<br>
-							<img src="img/wisdom_of_the_ancients.png" class="no-resize" style="width: 600px;">
+							<img src="images/wisdom_of_the_ancients.png" class="no-resize" style="width: 600px;">
 						</div>
 					</div>
 
 					<aside class="notes">
 						- Have to accept, that sometimes we just don't find anything <br>
-						- How can we make sure it doesn't happen too often?
+						- How can we make sure it doesn't happen too often? <br>
+						- Example (lightbox)<br>
+						- Also "apply what you find" + wayback machine <br>
+						- Google cache
 					</aside>
 
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot1.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot2.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot3.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot4.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot5.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot6.png">
+				</section>
+
+				<section data-background="images/examples/lightbox/screenshot7.png">
 				</section>
 
 				<section data-state="infopage" class="infopage">
@@ -346,6 +377,15 @@
 						- The ability to understand other peoples problems, "to put yourself in someone elses shoes"<br>
 						- Example "think how to ask and modify query" (mysql-distinct)
 					</aside>
+				</section>
+
+				<section data-background="images/examples/mysql-distinct/screenshot1.png">
+				</section>
+
+				<section data-background="images/examples/mysql-distinct/screenshot2.png">
+				</section>
+
+				<section data-background="images/examples/mysql-distinct/screenshot3.png">
 				</section>
 
 				<section data-state="infopage" class="infopage">
@@ -370,7 +410,7 @@
 					<div class="resultspage-results">
 						<div class="resultspage-onebox">
 							<div class="onebox-images">
-								<img src="img/duck_assisting_with_debugging.jpg" />
+								<img src="images/duck_assisting_with_debugging.jpg" />
 							</div>
 							<div class="onebox-name">Rubber ducking</div>
 							<div class="onebox-description">Rubber duck debugging, rubber ducking, and the rubber duckie test are informal terms used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck ... <span class="onebox-source"><a target="_blank" href="http://en.wikipedia.org/wiki/Rubber_duck_debugging">Wikipedia</a></span></div>
@@ -390,7 +430,7 @@
 
 						<div class="resultspage-result">
 							<div class="result-title"><a target="_blank" href="http://www.codinghorror.com/blog/2012/03/rubber-duck-problem-solving.html">Coding Horror: Rubber Duck Problem Solving</a></div>
-							<img class="result-author-image" src="img/coding-horror.jpg" />
+							<img class="result-author-image" src="images/coding-horror.jpg" />
 							<div class="result-url">www.codinghorror.com/.../rubber-duck-problem-solving.html‎</div>
 							<div class="result-author">by Jeff Atwood</div>
 							<div class="result-description"><span class="result-date">Mar 13, 2012 - </span>But for good reason: we're not-so-subtly trying to help you help yourself, by teaching you <b>Rubber Duck</b> problem solving. And boy does it ever <b>...</b></div>
@@ -428,7 +468,7 @@
 						<div class="resultspage-onebox">
 							<div class="onebox-title">See results about</div>
 							<div class="onebox-description" style="margin-top:5px;">
-								<img src="img/so-icon.png" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
+								<img src="images/so-icon.png" style="float:left;width:72px;height:72p;margin:5px 15px 0 0;" />
 								Stack Overflow<br>
 								<span class="onebox-subtitle">Q&amp;A site</span><br>
 								Stack Overflow is a question and answer site for professional ...</div>
@@ -469,6 +509,7 @@
 					</div>
 
 					<aside class="notes">
+						- Answering your own stackoverflow question  <br>
 						- Research the issue<br>
 					</aside>
 				</section>
@@ -488,7 +529,7 @@
 				<section data-state="infopage" class="infopage">
 					<h2 style="white-space:nowrap;">The Fear of the Click and the Tab</h2>
 					<br>
-					<img class="fragment" src="img/query-timeline.png" />
+					<img class="fragment" src="images/query-timeline.png" />
 
 					<div class="fragment" data-input-search="too many tabs"></div>
 
@@ -506,10 +547,7 @@
 				<section data-state="infopage" class="infopage" data-search="too many tabs">
 					<h2>Escaping the Tab Hell</h2>
 					<br>
-					<div class="fragment" style="position:relative;">
-						<img src="img/too-many-tabs.png" />
-						<icon class="fa fa-ban fragment" style="color: #DD4B39; text-shadow: 2px 2px 3px #aaa; position: absolute; top: -45px; left: 100px; font-size:500px;"></icon>
-					</div>
+					<img src="images/too-many-tabs.png" />
 
 					<div class="fragment" data-input-search="tree style tabs"></div>
 
@@ -524,19 +562,17 @@
 				<section data-state="infopage" class="infopage" data-search="tree style tabs">
 					<h2>Escaping the Tab Hell</h2>
 					<br>
-					<div>
-						<img src="img/tree-style-tabs.png" />
-					</div>
+					<img src="images/tree-style-tabs.png" />
 
 					<div class="fragment" data-input-search="PHP libraries"></div>
 
 					<aside class="notes">
-						- Example (lightbox)<br>
-						- Also "apply and learn + wayback machine"
+						- Example (php-conferences)<br>
+						- Find a system that works for you <br>
 					</aside>
 				</section>
 
-				<section data-state="resultspage" class="resultspage" data-search="PHP libraries">
+				<section data-state="resultspage" class="resultspage redacted" data-search="PHP libraries">
 					<div class="resultspage-resultcount">About 85,500,000 results (0.27 seconds) </div>
 
 					<div class="resultspage-results">
@@ -571,10 +607,17 @@
 							<div class="result-description">A framework and distribution system for reusable PHP components. [Open source]</div>
 						</div>
 
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="hhttp://net.tutsplus.com/articles/web-roundups/9-extremely-useful-and-free-php-libraries/">9 Extremely Useful and Free <b>PHP Libraries</b> | Nettuts+</a></div>
+							<div class="result-url">net.tutsplus.com/articles/web.../9-extremely-useful-and-free-php-libraries...</div>
+							<div class="result-description"><span class="result-date">Apr 7, 2009 -</span> A lot of functionality is shared among applications - like sending emails or preventing spam. In the spirit of reusing the wheel instead of <b>...</b></div>
+						</div>
+
 					</div>
 
 					<aside class="notes">
-						- Finding relevent libraries
+						- Finding relevent libraries <br>
+						- Search GitHub and Packagist
 					</aside>
 				</section>
 
@@ -586,67 +629,67 @@
 					<div class="fragment" style="margin-left:50px;">
 						<p>Including:</p>
 						<ul class="logo-list">
-							<li><img src="img/so-icon.png" />
+							<li><img src="images/so-icon.png" />
 								Stack Overflow</li>
-							<li><img src="img/Octocat.png" />
+							<li><img src="images/Octocat.png" />
 								GitHub</li>
-							<li><img src="img/packagist-logo.png" />
+							<li><img src="images/packagist-logo.png" />
 								Packagist</li>
 						</ul>
 					</div>
 
-					<div class="fragment" data-input-search="site:github.com php"></div>
+					<div class="fragment" data-input-search="site:github.com awesomesauce"></div>
 
 					<aside class="notes">
 						
 					</aside>
 				</section>
 
-				<section data-state="resultspage" class="resultspage" data-search="site:github.com php">
-					<div class="resultspage-resultcount">About 5,480,000 results (0.21 seconds) </div>
+				<section data-state="resultspage" class="resultspage redacted" data-search="site:github.com awesomesauce">
+					<div class="resultspage-resultcount">About 13,700 results (0.11 seconds) </div>
 
 					<div class="resultspage-results">
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/facebook/php-webdriver">facebook/<b>php</b>-webdriver · GitHub</a></div>
-							<div class="result-url">https://github.com/facebook/php-webdriverNot_invented_here</div>
-							<div class="result-description"><span class="result-date">Oct 14, 2013 -</span> thin <b>php</b> client for webdriver. Contribute to php-webdriver development by creating an account on GitHub.</div>
+							<div class="result-title"><a target="_blank" href="https://gist.github.com/ziadoz/1677679">Awesome <b>PHP Libraries</b> and Resources - Gists - GitHub</a></div>
+							<div class="result-url">https://gist.github.com/ziadoz/1677679</div>
+							<div class="result-description">Awesome <b>PHP Libraries</b> and Resources - Gist is a simple way to share snippets of text and code with others.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/facebook/facebook-php-sdk">facebook/facebook-<b>php</b>-sdk · GitHub</a></div>
-							<div class="result-url">https://github.com/facebook/facebook-php-sdk</div>
-							<div class="result-description">Facebook <b>PHP</b> SDK. Contribute to facebook-php-sdk development by creating an account on GitHub.</div>
+							<div class="result-title"><a target="_blank" href="https://github.com/twilson63/blog-awesome-sauce">twilson63/blog-<b>awesome</b>-sauce · GitHub</a></div>
+							<div class="result-url">https://github.com/twilson63/blog-awesome-sauce</div>
+							<div class="result-description"><span class="result-date">Feb 17, 2013 -</span> blog-awesome-sauce - A demo application to demonstrate angularjs authentication pattern using the angular-http-auth interceptor pattern.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/languages/PHP">Trending <b>PHP</b> repositories on GitHub today · GitHub</a></div>
-							<div class="result-url">https://github.com/languages/PHP</div>
-							<div class="result-description">tommcfarlin/WordPress-Plugin-Boilerplate <b>PHP</b>. A foundation for WordPress Plugin Development that aims to provide a clear and consistent guide for building <b>...</b></div>
+							<div class="result-title"><a target="_blank" href="https://github.com/rauhryan/awesomesauce">frauhryan/<b>awesomesauce</b> · GitHub</a></div>
+							<div class="result-url">https://github.com/rauhryan/awesomesauce</div>
+							<div class="result-description">Contribute to awesomesauce development by creating an account on GitHub.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/facebook/hhvm/wiki">Home · facebook/hhvm Wiki · GitHub</a></div>
-							<div class="result-url">https://github.com/facebook/hhvm/wiki</div>
-							<div class="result-description"><span class="result-date">Oct 20, 2013 -</span> HHVM is a new open-source virtual machine designed for executing programs written in <b>PHP</b>. HHVM uses a just-in-time compilation approach <b>...</b></div>
+							<div class="result-title"><a target="_blank" href="https://github.com/zachpendleton/awesomesauce">zachpendleton/<b>awesomesauce</b> · GitHub</a></div>
+							<div class="result-url">https://github.com/zachpendleton/awesomesauce</div>
+							<div class="result-description">Awesome Rack middleware for awesome websites. Contribute to awesomesauce development by creating an account on GitHub.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/php"><b>php</b> (<b>php</b>.net) · GitHub</a></div>
-							<div class="result-url">https://github.com/php</div>
-							<div class="result-description"><b>php</b>.net <b>php</b>. git.<b>php</b>.net; http://www.<b>php</b>.net; Joined on Sep 18, 2008. 58 public repos 6 members · Repositories · Members. Mirrors; Forks; Sources; All. C; 3,500 <b>...</b></div>
+							<div class="result-title"><a target="_blank" href="https://github.com/twilson63/blog-awesome-sauce">twilson63/blog-<b>awesome</b>-sauce · GitHub</a></div>
+							<div class="result-url">https://github.com/twilson63/blog-awesome-sauce</div>
+							<div class="result-description"><span class="result-date">Feb 17, 2013 -</span> blog-awesome-sauce - A demo application to demonstrate angularjs authentication pattern using the angular-http-auth interceptor pattern.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/php/php-src"><b>php/php</b>-src · GitHub</a></div>
-							<div class="result-url">https://github.com/php/php-src</div>
-							<div class="result-description">The <b>PHP</b> Interpreter. http://www.<b>php</b>.net · 10,000+ commits · 95 branches · 560 releases · 148 contributors · C 62.7% · <b>PHP</b> 35.7%; Other 1.5%. C <b>PHP</b> Other.</div>
+							<div class="result-title"><a target="_blank" href="https://github.com/rauhryan/awesomesauce">frauhryan/<b>awesomesauce</b> · GitHub</a></div>
+							<div class="result-url">https://github.com/rauhryan/awesomesauce</div>
+							<div class="result-description">Contribute to awesomesauce development by creating an account on GitHub.</div>
 						</div>
 
 						<div class="resultspage-result">
-							<div class="result-title"><a target="_blank" href="https://github.com/fabpot/PHP-CS-Fixer">fabpot/<b>PHP</b>-CS-Fixer · GitHub</a></div>
-							<div class="result-url">https://github.com/fabpot/PHP-CS-Fixer</div>
-							<div class="result-description"><b>PHP</b>-CS-Fixer - Analyzes some <b>PHP</b> source code and tries to fix coding standards issues (PSR-1 and PSR-2 compatible)</div>
+							<div class="result-title"><a target="_blank" href="https://github.com/zachpendleton/awesomesauce">zachpendleton/<b>awesomesauce</b> · GitHub</a></div>
+							<div class="result-url">https://github.com/zachpendleton/awesomesauce</div>
+							<div class="result-description">Awesome Rack middleware for awesome websites. Contribute to awesomesauce development by creating an account on GitHub.</div>
 						</div>
 
 					</div>
@@ -657,8 +700,19 @@
 						- Example (language-detect)<br>
 						- Bookmarklet (at github)<br>
 						- Example (getter-setter)<br>
-						- Example (twitter-packagist)<br>
 					</aside>
+				</section>
+
+				<section data-background="images/examples/language-detect/screenshot1.png">
+				</section>
+
+				<section data-background="images/examples/language-detect/screenshot2.png">
+				</section>
+
+				<section data-background="images/examples/language-detect/screenshot3.png">
+				</section>
+
+				<section data-background="images/examples/language-detect/screenshot4.png">
 				</section>
 
 				<section data-state="resultspage" class="resultspage" data-search="Not Invented Here">
@@ -872,30 +926,6 @@
 					</aside>
 				</section>
 
-				<!--
-				<section data-state="infopage" class="infopage">
-					<h2>Search for video tutorials</h2>
-					<br>
-					
-					<div class="resultspage">
-						<div class="resultspage-results">
-							<div class="resultspage-result">
-								<div class="result-title"><a target="_blank" href="http://www.youtube.com/watch?v=3yrpRfdtYc4">PHP OOP Login/Register System: CSRF Protection (Part 12/23)</a></div>
-								<img class="result-author-image" src="img/video-php-oop.jpg" />
-								<div class="result-url">www.youtube.com/watch?v=3yrpRfdtYc4</div>
-								<div class="result-author">Uploaded by phpacademy</div>
-								<div class="result-description">Here we implement a token generation system to protect against Cross Site Request Forgery (CSRF). Official <b>...</b></div>
-							</div>
-						</div>
-					</div>
-
-					<aside class="notes">
-						- Example (angular-testing)
-					</aside>
-					
-				</section>
-				-->
-
 				<section data-state="infopage" class="infopage">
 					<h2>Finding similar articles</h2>
 					<br>
@@ -909,10 +939,10 @@
 
 				<section data-state="resultspage" class="resultspage" data-search="Adjusting Reading Level" data-search-tools="active">
 					<div class="fragment" style="position: absolute; top: 0; left: 0;">
-						<img src="img/reading-level1.png" class="no-border no-resize">
+						<img src="images/reading-level1.png" class="no-border no-resize">
 					</div>
 					<div class="fragment" style="position: absolute; top: 2px; left: 5px;">
-						<img src="img/reading-level2.png" class="no-border no-resize">
+						<img src="images/reading-level2.png" class="no-border no-resize">
 					</div>
 
 					<div class="fragment" data-input-search="Google Web History"></div>
@@ -958,7 +988,7 @@
 				<section data-state="infopage" class="infopage">
 					<h2>Use the History</h2>
 					<br>
-					<img src="img/search-history.png" class="no-border no-resize">
+					<img src="images/search-history.png" class="no-border no-resize">
 
 					<div class="fragment" data-input-search="Let Me Google That For You"></div>
 
@@ -979,7 +1009,7 @@
 							<div class="result-description">For all those people who find it more convenient to bother <b>you</b> <br> with their question rather than <b>google</b> it for themselves.</div>
 						</div>
 						<br>
-						<img src="img/lmgtfy.png" class="no-border" style="position: absolute; top: -10px; right: 100px;">
+						<img src="images/lmgtfy.png" class="no-border" style="position: absolute; top: -10px; right: 100px;">
 						<br>
 						<p class="fragment quote"><i>Give a man an answer, help him once. <br> Teach a man to find the answer himself, <br> help him for a lifetime.</i></p>
 					</div>
@@ -991,13 +1021,42 @@
 
 				</section>
 
-				<section>
+				<section data-state="frontpagesearch">
                     <div class="frontpage-search">
-                    	<img id="google-logo" height="95" class="no-border" src="img/google-logo.png" alt="Google"><br>
-                        <input type="text" id="frontpage-search-input" class="search" name="q" value="Thanks!" /><br>
+                    	<img id="google-logo" height="95" class="no-border" src="images/google-logo.png" alt="Google"><br>
+                        <input type="text" id="lastpage-search-input" class="search" name="q" value="Questions?" /><br>
                         <button><span>Google Search</span></button>
                         <button><span>I'm Feeling Lucky</span></button>
                     </div>
+
+                    <div class="fragment" data-input-lastpage-search='site:joind.in "Carl Vuorinen"'></div>
+				</section>
+
+				<section data-state="resultspage" class="resultspage" data-search='site:joind.in "Carl Vuorinen"'>
+					<div class="resultspage-resultcount">About 29 results (0.18 seconds)</div>
+
+					<div class="resultspage-results">
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://joind.in/9932">Talk: Just Google it! – How to become a better developer using search - Joind.in</a></div>
+							<div class="result-url">joind.in/9932</div>
+							<div class="result-description">Have you ever ran across an issue like a weird error message, incompatible dependencies, a bug in a 3rd party library etc. and you try to Google it <b>...</b></div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="https://joind.in/event/view/1394/slides">Event: CodeConnexx 2013 - Joind.in</a></div>
+							<div class="result-url">https://joind.in/event/view/1394/slides</div>
+							<div class="result-description"><span class="result-date">Nov 8 2013 -</span> Lineke Kerckhoffs-Willems · Michelle Sanver · Pascal de Vink · Jelrik van Hal · Camilo Sperberg · Carl Vuorinen · Rob Allen · Michelangelo van ...</div>
+						</div>
+
+						<div class="resultspage-result">
+							<div class="result-title"><a target="_blank" href="http://joind.in/event/view/1394">Event: CodeConnexx 2013 - Joind.in</a></div>
+							<div class="result-url">joind.in/event/view/1394</div>
+							<div class="result-description">Lineke Kerckhoffs-Willems · Michelle Sanver · Pascal de Vink · Jelrik van Hal · Camilo Sperberg · Carl Vuorinen · Rob Allen · Michelangelo van Dam · Joshua ...</div>
+						</div>
+						
+					</div>
+
 				</section>
 
 			</div>
@@ -1006,8 +1065,7 @@
 
 		<footer>
 			<div class="left">Just Google it! – How to become a better developer using search — Carl Vuorinen</div>
-			<!-- <div class="right">CodeConnexx 2013</div> -->
-			<div class="right">W3 School 4.11.2013</div>
+			<div class="right">CodeConnexx 2013</div>
 		</footer>
 
 		<script src="lib/js/head.min.js"></script>
@@ -1039,7 +1097,9 @@
 					//{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'socket.io/socket.io.js', async: true },
+        			{ src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
 

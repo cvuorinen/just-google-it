@@ -34,6 +34,17 @@ Reveal.addEventListener('fragmentshown', function(event) {
         });
     }
 
+    // Type query into frontpage search input from data attribute
+    var search = $(event.fragment).attr('data-input-lastpage-search');
+    if (search) {
+        typeInput(
+            search,
+            $('#lastpage-search-input')[0]
+        ).done(function() {
+            setTimeout(Reveal.next, 500);
+        });
+    }
+
     // Type query into search input from data attribute
     var search = $(event.fragment).attr('data-input-search');
     if (search) {
@@ -57,6 +68,12 @@ Reveal.addEventListener('fragmentshown', function(event) {
                 setTimeout(Reveal.next, 500);
             }, 1000);
         });
+    }
+
+    // Apply class to current slide (section tag)
+    var sectionClass = $(event.fragment).attr('data-section-class');
+    if (sectionClass) {
+        $(event.fragment).parent().addClass(sectionClass);
     }
 });
 
